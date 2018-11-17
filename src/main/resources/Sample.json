@@ -1,0 +1,27 @@
+{
+  "sourcePart" : {
+    "partID" : "758399",
+    "sourcPartID" : "source part Id -1",
+    "packsize" : "1",
+    "currency" : "USD",
+    "minimumOrderQuantity" : "100",
+    "availability" : {
+      "availabilityMessage" : "No Stock",
+      "availabilityCode" : "Testcode",
+      "fohQty" : "0"
+    },
+    "sourceCd" : "TestSourceCd",
+    "priceTiers" : [
+      {
+        "maxQty" : "200",
+        "minQty" : "100",
+        "bronze" : {
+          "Price" : "4.531"
+        },
+        "silver" : {
+          "Price" : "4.531"
+        }
+      }
+    ]
+  }
+}
