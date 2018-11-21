@@ -131,6 +131,7 @@ public class InsertDocumentRunnable implements Runnable  {
             }
             if(isThrottled)
             {
+                System.out.print("Throttled on thread id: "+id);
                 Thread.sleep(new Random().nextInt(MaxWaitInMilliSeconds - MinWaitInMilliSeconds + 1) + MinWaitInMilliSeconds);
             }
         }
@@ -176,6 +177,7 @@ public class InsertDocumentRunnable implements Runnable  {
             }
             if(isThrottled)
             {
+                System.out.print("Throttled on thread id: "+id);
                 Thread.sleep(new Random().nextInt(MaxWaitInMilliSeconds - MinWaitInMilliSeconds + 1) + MinWaitInMilliSeconds);
             }
         }

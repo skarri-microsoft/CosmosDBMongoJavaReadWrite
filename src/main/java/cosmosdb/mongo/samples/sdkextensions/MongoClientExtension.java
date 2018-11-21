@@ -4,18 +4,18 @@ import com.google.common.collect.Lists;
 import com.mongodb.*;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoIterable;
-import com.mongodb.client.model.*;
+import com.mongodb.client.model.Aggregates;
+import com.mongodb.client.model.BulkWriteOptions;
+import com.mongodb.client.model.InsertOneModel;
 import org.bson.BsonDocument;
 import org.bson.BsonInt32;
 import org.bson.BsonString;
 import org.bson.Document;
-import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 public class MongoClientExtension {
 
@@ -96,6 +96,24 @@ public class MongoClientExtension {
         return null;
     }
 
+    public void UpdateRus(String dbName,String collName,int rus)
+    {
+        Document cmd = new Document("customAction", "UpdateCollection").
+                            append("collection", collName).append("offerThroughput", rus);
+        Document output = this.mongoClient.getDatabase(dbName).runCommand(cmd);
+        System.out.println("Response: "+output);
+
+    }
+
+    public void ShowRus(String dbName,String collName)
+    {
+        Document cmd = new Document("customAction", "GetCollection").
+                append("collection", collName);
+        Document output = this.mongoClient.getDatabase(dbName).runCommand(cmd);
+        System.out.println("Response: "+output);
+
+    }
+
     public void CreatePartitionedCollection(String dbName, String collectionName, String partitionKey)
     {
         System.out.println(
@@ -164,23 +182,10 @@ public class MongoClientExtension {
 
     public void GetDocumentsCount(String dbName,String collectionName)
     {
-//        List<BsonDocument> docList = new ArrayList<BsonDocument>();
-//
-//        Document matchCourse = new Document("$match",
-//                new Document("ci", Integer.parseInt(courseid)));
-        //docList.add("Document{{$match=Document{{JE_VAT_CODE=Document{{$ne=0}}}}}}") ;
-
-        //http://mongodb.github.io/mongo-java-driver/3.4/driver/tutorials/aggregation/
-        //https://stackoverflow.com/questions/38202897/mongo-aggregation-in-java-group-with-multiple-fields
         List<Bson> filters = new ArrayList<>();
         this.mongoClient.getDatabase(dbName).getCollection(collectionName).aggregate(
                 Arrays.asList(
                         Aggregates.match(new BsonDocument() {})
-//                        Aggregates.group("_id",
-//                                Accumulators.sum("JE_GL_ACCOUNT_NUMBER360", 1)
-//
-//                                )
-
                 )
         ).allowDiskUse(true).forEach(printBlock);
     }
