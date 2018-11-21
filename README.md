@@ -1,4 +1,4 @@
-# Cosmos DB Mongo How tos
+# Cosmos DB Java Mongo How tos
 
 1. Clone the sample and build it in IntelliJ.
 2. It generates jar with dependencies in target folder.
