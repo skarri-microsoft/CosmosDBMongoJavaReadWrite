@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae132e9b-fd10-487d-a1f5-d8e6f87fd74b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/ConfigSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/InsertionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/InsertionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/SampleDoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/SampleDoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/runnables/InsertDocumentRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/runnables/InsertDocumentRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/sdkextensions/MongoClientExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cosmosdb/mongo/samples/sdkextensions/MongoClientExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-    </list>
+    <list default="true" id="ae132e9b-fd10-487d-a1f5-d8e6f87fd74b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -335,7 +324,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542760669558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542760672546" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -383,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1309" height="837" extended-state="6" />
+    <frame x="-6" y="-6" width="1309" height="837" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3077538" />
@@ -660,8 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
